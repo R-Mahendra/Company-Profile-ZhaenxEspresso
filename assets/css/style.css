@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Viga&display=swap");
+:root {
+  --text-warna-cofe: #b3875b;
+  --warna-baground-hitam: #010101;
+  --warna-text-steal: #e2e8f0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+body {
+  background-color: var(--warna-baground-hitam);
+  color: var(--warna-text-steal);
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Viga", sans-serif;
+}
+
+/* Navbra style */
+
+.navbar {
+  background-color: var(--warna-baground-hitam);
+  border-bottom: 1px solid var(--text-warna-cofe);
+}
+.nav-link {
+  margin-top: 0;
+  color: var(--text-warna-cofe);
+  font-size: 1.2rem;
+}
+.nav-item {
+  margin-right: 1rem;
+}
+.nav-link:hover,
+.navsrc a:hover {
+  color: var(--warna-text-steal);
+}
+.navbar-brand {
+  color: var(--warna-text-steal);
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+.navbar-brand:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  rotate: -2deg;
+}
+.active{
+  border-bottom: 1px solid var(--text-warna-cofe);
+  padding-bottom: 0;
+}
+
+.navbar-brand .snja {
+  color: var(--text-warna-cofe);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.navsrc a {
+  color: var(--text-warna-cofe);
+  font-size: 1.2rem;
+}
+.navbar-toggler{
+  border-color: var(--text-warna-cofe);
+  border: 2px solid var(--text-warna-cofe);
+  color: var(--text-warna-cofe);
+}
+.navbar-toggler:hover{
+  box-shadow: 0 0 10px var(--text-warna-cofe);
+}
+
+
+/* style home */
+#home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../img/baground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  padding-top: 4rem;
+}
+#home::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 5%, rgba(255, 255, 255, 0) 30%);
+  width: 100%;
+  height: 100%;
+}
+
+#home .conten h4 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  font-size: 3.5rem;
+}
+#home .ctn {
+  color: var(--text-warna-cofe);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+#home .conten .slogan {
+  color: var(--text-warna-cofe);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+/* style Teantang kami */
+#tentangkami {
+  padding-top: 8rem;
+  margin-bottom: 22rem;
+}
+#tentangkami h2 {
+  color: var(--text-warna-cofe);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+#tentangkami .tentang {
+  color: var(--warna-text-steal);
+}
+#tentangkami .profile {
+  border-radius: 50px;
+}
+#tentangkami .paragrap p {
+  font-weight: 400;
+  font-family: "Poppins";
+  margin-bottom: 10px;
+}
+#tentangkami .paragrap .p1 {
+  color: var(--text-warna-cofe);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* style Menu Kami */
+#menukami {
+  padding-top: 8rem;
+  margin-bottom: 22rem;
+}
+#menukami h2 {
+  color: var(--text-warna-cofe);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+#menukami .mnkmi {
+  margin-bottom: 2rem;
+}
+#menukami .menu {
+  color: var(--warna-text-steal);
+}
+#menukami img {
+  width: 80%;
+}
+#menukami .p1 {
+  font-weight: 200;
+  font-family: "Poppins";
+  margin-bottom: 10px;
+}
+#menukami .card {
+  background: var(--warna-baground-hitam);
+  color: var(--text-warna-cofe);
+}
+#menukami .kopi {
+  padding: 0 2rem;
+}
+#menukami .card-text {
+  color: var(--warna-text-steal);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+#menukami .card-body p {
+  font-size: 1.2rem;
+}
+#menukami .card img {
+  transition: 0.5s ease;
+}
+#menukami .card:hover img {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+/* style Kontak Kami */
+#kontakkami {
+  padding-top: 8rem;
+  margin-bottom: 10rem;
+}
+#kontakkami h2 {
+  color: var(--text-warna-cofe);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+#kontakkami .kontak {
+  color: var(--warna-text-steal);
+}
+#kontakkami .p1 {
+  font-weight: 200;
+  font-family: "Poppins";
+  margin-bottom: 10px;
+}
+
+#kontakkami .maps iframe{
+  border-radius: 15px;
+  width: 100%;
+  height: 480px;
+  display: flex;
+}
+
+#kontakkami label {
+  color: var(--text-warna-cofe);
+}
+#message:focus,
+#name:focus,
+#email:focus,
+#nomor_hp:focus,
+#email_subject:focus {
+  box-shadow: 0px 0px 10px var(--text-warna-cofe);
+}
+#kontakkami .form-control::placeholder,
+small {
+  color: var(--text-warna-cofe);
+}
+#name,
+#email,
+#nomor_hp,
+#email_subject,
+#message {
+  border: none;
+  background-color: #cbd5e1;
+  color: var(--warna-baground-hitam);
+}
+
+/* Style Footer */
+
+
+#futer h5{
+  font-weight: 500;
+  color: var(--warna-text-steal);
+}
+
+#futer span{
+  color: var(--text-warna-cofe);
+  font-weight: 700;
+}
+#futer .list-unstyled{
+  color: var(--warna-text-steal);
+  font-size: 1rem;
+}
+#futer .list-unstyled a{
+  color: var(--text-warna-cofe);
+  font-weight: 500;
+  text-decoration: none;
+}
+#futer .list-unstyled a:hover{
+  color: var(--warna-text-steal);
+  font-weight: 500;
+  text-decoration: none;
+}
+#futer hr{
+  color: var(--warna-text-steal);
+  width: 120px;
+  margin: 10px 0;
+}
+#futer .icons a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: transform all 0.5s ease;
+  color: var(--text-warna-cofe);
+}
+#futer2{
+  background-color: var(--text-warna-cofe);
+  color: var(--warna-text-steal);
+}
+
+/* style scrollbar */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* Gaya scroll thumb */
+::-webkit-scrollbar-thumb {
+  background-color: var(--warna-text-steal);
+  border-radius: 5px;
+}
+
+/* Gaya scroll track Rainbow*/
+::-webkit-scrollbar-track {
+  background: linear-gradient(130deg, #001885, #ad002b 50.07%, #06e1f1 76.05%);
+  border-radius: 5px;
+}
+
+/* Gaya scroll thumb saat dihover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-warna-cofe);
+}
+
+/* Style buton */
+#mybtn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background: var(--text-warna-cofe);
+  padding: 5px 10px;
+  color: var(--warna-text-steal);
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 10px var(--text-warna-cofe);
+  border: 2px solid var(--text-warna-cofe);
+  margin-top: 10px;
+}
+#mybtn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+#mybtn:hover {
+  background-color: var(--text-warna-cofe);
+  color: var(--warna-baground-hitam);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--warna-text-steal);
+}
+#mybtn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+#mybtn:active {
+  background-color: var(--warna-text-steal);
+  color: var(--text-warna-cofe);
+}
+
+#Back-to-top {
+  border-radius: 10%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--text-warna-cofe);
+  border: 3px solid #b37c45;
+  box-shadow: 0 0 8px var(--text-warna-cofe);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 2;
+}
+#Back-to-top i {
+  color: var(--warna-text-steal);
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+}
+#Back-to-top:hover {
+  border-color: var(--text-warna-cofe);
+  transform: scale(1.08);
+}
